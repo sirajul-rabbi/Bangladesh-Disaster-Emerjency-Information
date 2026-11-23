@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f7f8;
+    color: #243447;
+    line-height: 1.6;
+}
+
+.header {
+    background: #063b35;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #70e0ae;
+}
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 60px 9%;
+    color: white;
+    background: linear-gradient(120deg, #063b35, #087c68);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #a7f3d0;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 58px);
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f4b942;
+    color: #16352e;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ffcf68;
+}
+
+.container {
+    max-width: 1150px;
+    width: 90%;
+    margin: auto;
+}
+
+.welcome {
+    text-align: center;
+    padding: 45px 10px;
+}
+
+.section-title {
+    text-align: center;
+    color: #075b4d;
+    font-size: 29px;
+    margin: 35px 0 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    border-bottom: 4px solid #16a085;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.emoji {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #08745e;
+    margin-bottom: 10px;
+}
+
+.district, .checklist, .help {
+    padding: 20px 0;
+    text-align: center;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ccd7d4;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.district select {
+    max-width: 500px;
+}
+
+.result, .info-box {
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.info-box label {
+    display: block;
+    margin: 12px 0;
+}
+
+.info-box input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e07826;
+    margin: 12px;
+}
+
+.contact-card .btn {
+    margin-top: 15px;
+}
+
+#helpForm {
+    background: white;
+    padding: 25px;
+    max-width: 650px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+#helpForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#helpForm button {
+    width: 100%;
+}
+
+.notice {
+    margin: 35px 0;
+    padding: 15px;
+    background: #fff4d6;
+    color: #74541b;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+footer {
+    background: #063b35;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 55px 7%;
+    }
+}
